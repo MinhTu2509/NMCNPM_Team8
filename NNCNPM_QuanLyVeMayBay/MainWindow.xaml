@@ -1,0 +1,71 @@
+﻿<Window x:Class="NNCNPM_QuanLyVeMayBay.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NNCNPM_QuanLyVeMayBay"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" ResizeMode="NoResize" Width="1428" MaxWidth="1920" MaxHeight="1080" WindowStartupLocation="CenterScreen" Closing="Window_Closing"  Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Closed="Window_Closed">
+    <Window.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform X="0"/>
+        </TransformGroup>
+    </Window.RenderTransform>
+    <Grid x:Name="_Grid" HorizontalAlignment="Left" Height="770" VerticalAlignment="Top" Width="1418" Background="White">
+        <Grid x:Name="GridTabWindow" HorizontalAlignment="Left" Height="770" Margin="298,0,0,0" VerticalAlignment="Top" Width="1120" Background="White"/>
+        <Grid HorizontalAlignment="Left" Height="750" Margin="10,10,0,0" VerticalAlignment="Top" Width="274">
+            <Border BorderThickness="1" CornerRadius="20,20,20,20" Background="#2155CD"/>
+            <Button x:Name="BTN_ChuyenBay" Margin="19,363,0,0" VerticalAlignment="Top" Click="bnt_ChuyenBay_Click" HorizontalAlignment="Left" Width="235"  Height="35" Background="#1F4287" BorderBrush="{x:Null}" ClickMode="Press">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Icon/airport-64.png" Height="26" RenderTransformOrigin="0.02,0.533" Width="81" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Width="134" FontWeight="Bold" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Text="Chuyến bay"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="BTN_VeChuyenBay" HorizontalAlignment="Left" Margin="19,403,0,0" VerticalAlignment="Top" Width="235" Click="bnt_VeMayBay_Click" Height="35" Background="#1F4287" BorderBrush="{x:Null}" ClickMode="Press">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Icon/ticket-64.png" Height="26" RenderTransformOrigin="0.02,0.533" Width="80"/>
+                    <TextBlock Width="134" FontWeight="Bold" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Text="Bán vé"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="BTN_TimKiem" HorizontalAlignment="Left" Margin="19,443,0,0" VerticalAlignment="Top" Width="235" Click="bnt_TimKiemChuyenBay_Click" Height="35" Background="#1F4287" BorderBrush="{x:Null}" ClickMode="Press">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Icon/search-2-64.png" Height="26" RenderTransformOrigin="0.02,0.533" Width="80"/>
+                    <TextBlock Width="134" FontWeight="Bold" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Text="Tìm kiếm"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="BTN_BaoCao" HorizontalAlignment="Left" Margin="19,483,0,0" VerticalAlignment="Top" Width="235" Click="bnt_BaoCaoDoanhThu_Click" Height="35" Background="#1F4287" BorderBrush="{x:Null}" ClickMode="Press">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Icon/report-2-64.png" Height="26" RenderTransformOrigin="0.02,0.533" Width="80"/>
+                    <TextBlock Width="134" FontWeight="Bold" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Text="Báo cáo"/>
+                </StackPanel>
+            </Button>
+            <Button Content="Đăng xuất" HorizontalAlignment="Left" Margin="19,609,0,0" VerticalAlignment="Top" Width="235" Height="35" Click="Button_Click" Background="#1F4287" FontSize="16" FontWeight="Bold" BorderBrush="{x:Null}" ClickMode="Press"/>
+            <Button x:Name="BTN_CaiDat" HorizontalAlignment="Left" Margin="19,523,0,0" VerticalAlignment="Top" Width="235" Height="35" Background="#1F4287" Click="BTN_CaiDat_Click" BorderBrush="{x:Null}" BorderThickness="0">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Icon/settings-4-64.png" Height="26" RenderTransformOrigin="0.02,0.533" Width="80"/>
+                    <TextBlock Width="134" FontWeight="Bold" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Text="Quy định"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="BTN_TrangChu" Margin="19,321,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="235"  Height="37" Click="BTN_TrangChu_Click" BorderBrush="{x:Null}" ClickMode="Press" Background="#1F4287">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Icon/home-7-64.png" Height="26" RenderTransformOrigin="0.02,0.533" Width="81" HorizontalAlignment="Center"/>
+                    <TextBlock Width="134" FontWeight="Bold" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Text="Trang chủ"/>
+                </StackPanel>
+            </Button>
+            <TextBox HorizontalAlignment="Left" Height="145" Margin="19,72,0,0" TextWrapping="Wrap" Text="QUẢN LÝ CHUYẾN BAY&#xA; TEAM 8_NMCNPM" VerticalAlignment="Top" Width="235" FontSize="20
+                     " Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        </Grid>
+    </Grid>
+
+
+</Window>

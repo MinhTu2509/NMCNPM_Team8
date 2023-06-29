@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="NNCNPM_QuanLyVeMayBay.MyUserControls.TicketUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NNCNPM_QuanLyVeMayBay.MyUserControls"
+             mc:Ignorable="d" d:DesignWidth="720" Height="153.365">
+    <Border x:Name="border_ticket" BorderThickness="4" BorderBrush="#FFFECA57" Background="AliceBlue" CornerRadius="30,30,30,30" Margin="0,0,0,10.6">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" x:Name="TB_HangVe" Text="Phổ thông" FontSize="18" Foreground="Black" FontWeight="Bold" Margin="0,20,0,0" HorizontalAlignment="Center"></TextBlock>
+            <Image Grid.Column="0" x:Name="IMG_LoaiVe" Source="/Icon/icons8-two-tickets-50.png" Width="70" Height="70" Margin="0,30,0,0"></Image>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="35"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Chuyến bay :" Foreground="Black" FontSize="18" Margin="10,10,0,0" FontWeight="Bold"></TextBlock>
+                    <TextBlock Grid.Column="0" x:Name="TB_MaChuyenBay" Foreground="Black" Text="CB0001" Margin="130,13,0,0" FontSize="15"></TextBlock>
+                    <Image Grid.Column="0" Source="/Icon/icons8-calendar-13-48.png" Height="30" Width="30" Margin="20,0,0,0" HorizontalAlignment="Left"></Image>
+                    <TextBlock Grid.Column="0" x:Name="TB_NgayBay" Foreground="Black" Text="25/09/2003" HorizontalAlignment="Left" Margin="55,43,0,0" FontSize="14"></TextBlock>
+                    <Image Grid.Column="0" Source="/Icon/icons8-airplane-take-off-50.png" Height="30" Width="30" Margin="20,70,0,0" HorizontalAlignment="Left"></Image>
+                    <TextBlock Grid.Column="0" x:Name="TB_SanBayDi" Foreground="Black" Text="Hà nội" HorizontalAlignment="Left" Margin="55,78,0,0" FontSize="14"></TextBlock>
+                    <Image Grid.Column="0" Source="/Icon/icons8-destination-66.png" HorizontalAlignment="Left" Width="30" Height="30" Margin="145,70,0,0"></Image>
+                    <TextBlock Grid.Column="0" x:Name="TB_SanBayDen" Foreground="Black" Text="TPHCM" HorizontalAlignment="Left" Margin="180,78,0,0" FontSize="14"></TextBlock>
+
+                    <TextBlock Grid.Column="1" Text="Hành khách :" Foreground="Black" FontSize="18" Margin="10,10,0,0" FontWeight="Bold"></TextBlock>
+                    <TextBlock Grid.Column="1" x:Name="TB_CMND" Foreground="Black" Text="21521619" Margin="130,13,0,0" FontSize="15"></TextBlock>
+                    <Image Grid.Column="1" Source="/Icon/icons8-passenger-60.png" Height="30" Width="30" Margin="20,0,0,0" HorizontalAlignment="Left"></Image>
+                    <TextBlock Grid.Column="1" x:Name="TB_TenHanhKhach" Foreground="Black" Text="Trần Tịnh Minh Tú" HorizontalAlignment="Left" Margin="55,43,0,0" FontSize="14"></TextBlock>
+                    <Image Grid.Column="1" Source="/Icon/icons8-phone-50.png" Height="30" Width="30" Margin="20,70,0,0" HorizontalAlignment="Left"></Image>
+                    <TextBlock Grid.Column="1" x:Name="TB_SDT" Foreground="Black" Text="0943063043" HorizontalAlignment="Left" Margin="55,78,0,0" FontSize="14"></TextBlock>
+
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"></ColumnDefinition>
+                        <ColumnDefinition Width="180"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Giá tiền:" Foreground="Black" FontSize="20" FontWeight="Bold" Margin="40,5,0,-10" ></TextBlock>
+                    <TextBlock Grid.Column="1" x:Name="TB_ThanhTien" Foreground="Black" Text="1,000,000" FontSize="20" Margin="0,5,0,0" Width="180" HorizontalAlignment="Right"></TextBlock>
+                    <TextBlock Grid.Column="2" Text="VND" FontSize="20" FontWeight="Bold" Foreground="Gray" Margin="0,5,0,0"></TextBlock>
+
+                </Grid>
+            </Grid>
+            <Button Grid.Column="2" x:Name="BTN_Ban" Content="Bán" Margin="5,0,20,0" Click="BTN_Ban_Click" Background="#FF10AC84" BorderBrush="{x:Null}"></Button>
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NNCNPM_QuanLyVeMayBay</name>
+    </assembly>
+    <members>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DAO.BaoCaoDoanhThuDAO.LaySoChuyenBayTheoNam(System.Int32)">
+            <summary>
+            Trả về số chuyến bay của từng tháng trong năm
+            </summary>
+            <param name="nam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DAO.BaoCaoDoanhThuDAO.LayDoanhThuTheoNam(System.Int32)">
+            <summary>
+            Trả về doanh thu của từng tháng trong năm
+            </summary>
+            <param name="nam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DAO.BaoCaoDoanhThuDAO.LayDoanhThuTheoThang(System.Int32,System.Int32)">
+            <summary>
+            Trả về doanh thu của từng chuyến bay trong tháng 
+            </summary>
+            <param name="thang"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DAO.BaoCaoDoanhThuDAO.LaySoVeTheoThang(System.Int32,System.Int32)">
+            <summary>
+            Hàm trả về số vé từng chuyến bay trong tháng
+            </summary>
+            <param name="nam"></param>
+            <param name="thang"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DAO.BaoCaoDoanhThuDAO.XuatFileExelTheoThang(System.Int32,System.Int32)">
+            <summary>
+            Hàm xuất file exel doanh thu theo tháng 
+            </summary>
+            <param name="nam"></param>
+            <param name="thang"></param>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DAO.BaoCaoDoanhThuDAO.XuatFileExelTheoNam(System.Int32)">
+            <summary>
+            Hàm xuất file exel doanh thu theo năm 
+            </summary>
+            <param name="nam"></param>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DAO.BaoCaoDoanhThuDAO.BaoCaoDoanhThuTheoThang(System.Int32,System.Int32)">
+            <summary>
+            Hàm trả về Datatable doanh thu theo tháng 
+            </summary>
+            <param name="nam"></param>
+            <param name="thang"></param>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DataProvider.ExecuteQuery(System.String,System.Object[])">
+            <summary>
+            Hàm thực hiện lệnh truyền vào 
+            </summary>
+            <param name="query"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DataProvider.ExecuteNonQuery(System.String,System.Object[])">
+            <summary>
+            Hàm trả ra số dòng thành công, vd các lệnh: Update , Insert, Delete, ...
+            </summary>
+            <param name="query"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.DataProvider.ExecuteScalar(System.String,System.Object[])">
+            <summary>
+            Hàm thực hiện đếm số lượng (trả về ô đầu tiên của kết quả) , vd: SELECT Count(*) FROM ABC
+            </summary>
+            <param name="query"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.UserControls.AvailableFlights">
+            <summary>
+            Interaction logic for AvailableFlights.xaml
+            </summary>
+            <summary>
+            AvailableFlights
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.UserControls.AvailableFlights.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.MyUserControls.ControlUC.GetWindowParent(System.Windows.Controls.UserControl)">
+            <summary>
+            Hàm lấy window từ userContol
+            </summary>
+            <param name="uc"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.MyUserControls.MyChart">
+            <summary>
+            Interaction logic for MyChart.xaml
+            </summary>
+            <summary>
+            MyChart
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.MyUserControls.MyChart.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.MyUserControls.TicketUC">
+            <summary>
+            Interaction logic for TicketUC.xaml
+            </summary>
+            <summary>
+            TicketUC
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.MyUserControls.TicketUC.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WBaoCaoDoanhThu">
+            <summary>
+            Interaction logic for WBaoCaoDoanhThu.xaml
+            </summary>
+            <summary>
+            WBaoCaoDoanhThu
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WBaoCaoDoanhThu.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WChonChuyenBay">
+            <summary>
+            Interaction logic for WChonChuyenBay.xaml
+            </summary>
+            <summary>
+            WChonChuyenBay
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WChonChuyenBay.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WChonHangVe">
+            <summary>
+            Interaction logic for WChonHangVe.xaml
+            </summary>
+            <summary>
+            WChonHangVe
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WChonHangVe.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WCaiDat">
+            <summary>
+            Interaction logic for WCaiDat.xaml
+            </summary>
+            <summary>
+            WCaiDat
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WCaiDat.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WChiTietChuyenBay">
+            <summary>
+            Interaction logic for WChiTietChuyenBay.xaml
+            </summary>
+            <summary>
+            WChiTietChuyenBay
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WChiTietChuyenBay.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WChuyenBay">
+            <summary>
+            Interaction logic for WChuyenBay.xaml
+            </summary>
+            <summary>
+            WChuyenBay
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WChuyenBay.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.Window1">
+            <summary>
+            Interaction logic for Window1.xaml
+            </summary>
+            <summary>
+            Window1
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.Window1.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WDoiMatKhau">
+            <summary>
+            Interaction logic for WDoiMatKhau.xaml
+            </summary>
+            <summary>
+            WDoiMatKhau
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WDoiMatKhau.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WPrintTicket">
+            <summary>
+            Interaction logic for WPrintTicket.xaml
+            </summary>
+            <summary>
+            WPrintTicket
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WPrintTicket.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WThemTaiKhoan">
+            <summary>
+            Interaction logic for WThemTaiKhoan.xaml
+            </summary>
+            <summary>
+            WThemTaiKhoan
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WThemTaiKhoan.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WTimKiemChuyenBay">
+            <summary>
+            Interaction logic for WTimKiemChuyenBay.xaml
+            </summary>
+            <summary>
+            WTimKiemChuyenBay
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WTimKiemChuyenBay.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WTrangChu">
+            <summary>
+            Interaction logic for WTrangChu.xaml
+            </summary>
+            <summary>
+            WTrangChu
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WTrangChu.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.WVeMayBay">
+            <summary>
+            Interaction logic for WVeMayBay.xaml
+            </summary>
+            <summary>
+            WVeMayBay
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.WVeMayBay.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:NNCNPM_QuanLyVeMayBay.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:NNCNPM_QuanLyVeMayBay.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:NNCNPM_QuanLyVeMayBay.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:NNCNPM_QuanLyVeMayBay.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>
